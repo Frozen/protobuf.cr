@@ -3,4 +3,4 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq protobuf-compiler
 - crystal build ./bin/protoc-gen-crystal.cr --release
-- protoc spec/test.proto --crystal_out=./
+- protoc spec/fixtures/test.proto --crystal_out=./
